@@ -1,53 +1,163 @@
 * {
-    margin:0;
-    padding: 0;
+    margin: 0px;
     box-sizing: border-box;
-}
+    }
 
 body {
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(0, 0, 0);
     color:grey;
+    height: 100%;
+    overflow: hidden;
 }
-
-.container{
-    margin: 1fr;
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    min-height: 100vh;
-}
-
-h1{
+div{
     justify-content: center;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    color:#74BED9;
+    
+}
+h1{
+    text-align: center;
     text-shadow: #0000FF 2px 2px 2px;
     color: #74BED9;
-    position: relative;
     margin: 20px;
-    padding: 30px;
+    padding: 20px;
+    display: grid;
+    grid-column: 2/2;
+  }
   
-}
-main {
-    grid-area: 1 / 2 / 5 / 6; 
-}
-
-.form-login{
-    border: 2px solid grey;
-    width: 200px;
-    height: 150px;
-    position: relative;
-    background-color: #74BED9;
-    margin: 30px;
-    padding: 30px;
-
-}
-.btn{
-    height: 20px;
-    width: 50px;
+/*les boutons*/
+button{
+    margin: 2vh;
+    height: 50px;
+    width: 60px;
     border:2px solid grey;
     background-color: white;
     border-radius: 20px;
+    color: black;
+    justify-content: center;
+    display: flex;
+    padding:10px;
 }
+/*
+button:hover{
+    margin: 4vh 6vh -6 -4;
+    height: 60px;
+    width: 70px;
+    border:2px solid blue;
+    background-color:#74BED9;
+    border-radius: 20px;
+    color: black;
+    justify-content: space-around;
+    display: flex;
+    padding: 25px;
+}
+*/
+.btn{
+    margin: 2vh;
+    padding:10px;
+    height: 50px;
+    width: 80px;
+    border:2px solid grey;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    justify-content: center;
 
-
+}
+/*
+.btn:hover{
+    margin: 4vh 6vh -6 -4;
+    height: 60px;
+    width: 70px;
+    border:2px solid blue;
+    background-color:#74BED9;
+    border-radius: 20px;
+    color: black;
+    justify-content: space-around;
+    display: flex;
+}
+*/
+.btn-modifier{
+    margin: 2vh;
+    padding:10px;
+    height: 50px;
+    width: 60px;
+    border:2px solid grey;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    justify-content: center;
+}
+/*
+.btn-modifier:hover{
+    margin: 4vh 6vh -6 -4;
+    height: 60px;
+    width: 70px;
+    border:2px solid blue;
+    background-color:#74BED9;
+    border-radius: 20px;
+    color: black;
+    justify-content: space-around;
+}*/
+.btn-delete{
+    margin: -60px 130px;
+    padding:10px;
+    height: 40px;
+    width: 70px;
+    border:2px solid red;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    justify-content: center;
+}
+/*
+.btn-delete:hover{
+    margin: -60px 130px;
+    height: 45px;
+    width: 75px;
+    border:2px solid red;
+    background-color: red;
+    border-radius: 20px;
+    color: black;
+    justify-content: space-around;
+}
+*/
+/*Css mediaquery bouttons*/
+@media screen and (max-width: 901px){
+    button {
+        margin: -2vh;
+        height: 50px;
+        width: 60px;
+        border:2px solid grey;
+        background-color: white;
+        border-radius: 20px;
+        color: black;
+        justify-content:center;
+        display: block;
+        padding: 5px;
+    }
+    /*navbar button*/
+    .btn{
+        margin-left:-1vh;
+        padding:8px;
+        height: 50px;
+        width: 70px;
+        border:2px solid grey;
+        background-color: white;
+        border-radius: 20px;
+        color: black;
+        justify-content: center;
+    
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1;
+        color:#74BED9;
+        
+    }
+  
+}

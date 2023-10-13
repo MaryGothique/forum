@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\Security\Http\Attribute\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class CategoryController extends AbstractController
@@ -21,6 +22,7 @@ class CategoryController extends AbstractController
     }
 
     #[Route('/admin/category/create', name: 'admin.category.create')]
+    #[IsGranted('ROLE_USER')]
     public function createCategory(Request $request): Response|RedirectResponse
     {
         $category = new Category();

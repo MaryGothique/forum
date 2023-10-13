@@ -1,41 +1,47 @@
-/*CSS de l' article*/
+/*CSS de category*/
+.card_list{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.category-form{
+        border: 2px solid grey;
+      background-color: #74BED9;
+      border-radius: 20px;
+      width: 200px;
+      height: 130px;
+      margin: auto;
+      padding: 10px;
+      justify-content: baseline;
+      color: gray;
+        }
 
-
-.card-title {
-    color:black;
+.card-category-title{
+    width: 150px;
+    height: 30px;
+    background-color: #74BED9;
+    padding: 0px;
+    color: black;
     text-shadow: #0000FF 2px 2px 2px;
     position: relative;
-    padding: initial;
-    justify-content: right;
-    text-indent: 10px;
-}
-.card-text {
-   color: rgb(41, 41, 41);
-   text-indent: 10px;
-   background: white;
-   font-size: 12px;
-
-   width: 320px;
-}
-.btn{
-    height: 20px;
-    width: 50px;
-    border:2px solid grey;
-    background-color: white;
+    justify-content: center;
+    text-indent: 0;
+    border: 2px gray;
     border-radius: 20px;
 }
-.form_delete{
-    height: 20px;
-    width: 65px;
-    border:2px solid red;
-    background-color: white;
-    border-radius: 10%;
-    color: black;
-}
-
-.btn_danger{
-    border:2px solid red;
-    background-color: white;
-    border-radius: 10%;
-    color: black;
-}
+@media screen and (max-width: 901px){
+        .category-form{
+            border: 2px solid grey;
+        background-color: #74BED9;
+        border-radius: 20px;
+        width: 200px;
+        height: 130px;
+        margin: auto;
+        padding: 10px;
+        justify-content: baseline;
+        color: gray;
+        }
+    }
